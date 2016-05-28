@@ -9,21 +9,42 @@
 
   <meta charset="utf-8">
   
-  <title>Hello World | lotey</title>
+  <title>mysql-5.7.12源码编译安装 | lotey</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+  <meta name="description" content="请切换到root下执行操作
+
+创建mysql组
+1groupadd myql
+
+创建mysql用户，并指定属于mysql组
+1useradd -r -g mysql mysql
+
+自行下载mysql源码包文件和boost源码文件，mysql-5.7.12.tar.gz和boost_1_59_0.tar.gz(必须下载此版本，高或低都不可)mysql-5.7.12.tar.gzboost_1_59_">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2016/05/27/hello-world/index.html">
+<meta property="og:title" content="mysql-5.7.12源码编译安装">
+<meta property="og:url" content="http://yoursite.com/2016/05/28/mysql-5.5.12-install/index.html">
 <meta property="og:site_name" content="lotey">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
-<meta property="og:updated_time" content="2016-05-27T15:27:53.893Z">
+<meta property="og:description" content="请切换到root下执行操作
+
+创建mysql组
+1groupadd myql
+
+创建mysql用户，并指定属于mysql组
+1useradd -r -g mysql mysql
+
+自行下载mysql源码包文件和boost源码文件，mysql-5.7.12.tar.gz和boost_1_59_0.tar.gz(必须下载此版本，高或低都不可)mysql-5.7.12.tar.gzboost_1_59_">
+<meta property="og:updated_time" content="2016-05-28T04:54:45.300Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="mysql-5.7.12源码编译安装">
+<meta name="twitter:description" content="请切换到root下执行操作
+
+创建mysql组
+1groupadd myql
+
+创建mysql用户，并指定属于mysql组
+1useradd -r -g mysql mysql
+
+自行下载mysql源码包文件和boost源码文件，mysql-5.7.12.tar.gz和boost_1_59_0.tar.gz(必须下载此版本，高或低都不可)mysql-5.7.12.tar.gzboost_1_59_">
   
     <link rel="alternative" href="/atom.xml" title="lotey" type="application/atom+xml">
   
@@ -245,11 +266,11 @@ Quick">
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-mysql-5.5.12-install" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/05/27/hello-world/" class="article-date">
-      <time datetime="2016-05-27T15:27:53.893Z" itemprop="datePublished">2016-05-27</time>
+      <a href="/2016/05/28/mysql-5.5.12-install/" class="article-date">
+      <time datetime="2016-05-28T04:54:45.300Z" itemprop="datePublished">2016-05-28</time>
 </a>
     </div>
   
@@ -262,7 +283,7 @@ Quick">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      mysql-5.7.12源码编译安装
     </h1>
   
 
@@ -270,6 +291,10 @@ Quick">
       
       <div class="article-info article-info-post">
         
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/Linux-在此处输入这篇文章的分类。/">Linux   //在此处输入这篇文章的分类。</a>
+    </div>
+
 
         
         <div class="clearfix"></div>
@@ -279,15 +304,71 @@ Quick">
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <p><strong>请切换到root下执行操作</strong></p>
+<ul>
+<li><p>创建mysql组</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">groupadd myql</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>创建mysql用户，并指定属于mysql组</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">useradd -r -g mysql mysql</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>自行下载mysql源码包文件和boost源码文件，<em>mysql-5.7.12.tar.gz</em>和<em>boost_1_59_0.tar.gz</em>(必须下载此版本，高或低都不可)<br><em>mysql-5.7.12.tar.gz</em><br><em>boost_1_59_0.tar.gz</em></p>
+</li>
+<li><p>解压mysql文件到/tmp</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf /soft/mysql-5.7.12.tar.gz -C /tmp/</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>解压boost源码文件到/tmp</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf /soft/boost_1_59_0.tar.gz -C /tmp/</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>创建编译后的目录</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p /opt/mysql-5.7.12</span><br><span class="line">mkdir -p /opt/mysql-5.7.12/data</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>设置编译参数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /tmp/mysql-5.7.12</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">cmake -DCMAKE_INSTALL_PREFIX=/opt/mysql-5.7.12 \</span><br><span class="line">-DMYSQL_UNIX_ADDR=/opt/mysql-5.7.12/mysql.sock \</span><br><span class="line">-DDEFAULT_CHARSET=utf8 \</span><br><span class="line">-DDEFAULT_COLLATION=utf8_general_ci \</span><br><span class="line">-DWITH_INNOBASE_STORAGE_ENGINE=1 \</span><br><span class="line">-DWITH_PARTITION_STORAGE_ENGINE=1 \</span><br><span class="line">-DWITH_FEDERATED_STORAGE_ENGINE=1 \</span><br><span class="line">-DWITH_BLACKHOLE_STORAGE_ENGINE=1 \</span><br><span class="line">-DENABLED_LOCAL_INFILE=1 \</span><br><span class="line">-DWITH_EMBEDDED_SERVER=0 \</span><br><span class="line">-DMYSQL_DATADIR=/opt/mysql-5.7.12/data \</span><br><span class="line">-DMYSQL_TCP_PORT=3306 \</span><br><span class="line">-DDOWNLOAD_BOOST=1 \</span><br><span class="line">-DWITH_BOOST=/tmp/boost_1_59_0</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>开始编译，多线程编译，根据自己电脑的CPU线程数量</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make -j8</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make install</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>复制编译后的配置文件到/etc，修改配置文件名称为my.cnf</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp /opt/mysql-5.7.12/support-files/my-default.cnf /etc/my.cnf</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改配置信息，大体如下</p>
+<blockquote>
+<p>[mysqld]<br>basedir = /opt/mysql-5.7.12<br>datadir = /opt/mysql-5.7.12/data<br>port = 3306<br>socket = /opt/mysql-5.7.12/mysql.sock<br>log-error = /opt/mysql-5.7.12/data/err.log<br>pid-file = /opt/mysql-5.7.12/data/mysql.pid<br>character-set-server=utf8<br>sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES<br>[client]<br>port = 3306<br>socket=/opt/mysql-5.7.12/mysql.sock<br>default-character-set=utf8</p>
+</blockquote>
+</li>
+<li><p>初始化mysql，并查看生成的初始化随机密码，日志文件为/opt/mysql-5.7.12/data/err.log，位置可通过my.cnf配置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /opt/mysql-5.7.12/bin/</span><br><span class="line">./mysqld --initialize --user=mysql --basedir=/opt/mysql-5.7.12 --datadir=/opt/mysql-5.7.12/data</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装安全证书</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /opt/mysql-5.7.12/bin/</span><br><span class="line">./mysql_ssl_rsa_setup</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改mysql安装目录属主</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">chown -R mysql:root /opt/mysql-5.7.12</span><br><span class="line">chown -R mysql:mysql /opt/mysql-5.7.12/data</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>启动mysql</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/opt/mysql-5.7.12/support-files/mysql.server start</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改mysql用户密码为root</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./bin/mysqladmin -h localhost -uroot password &quot;root&quot; -p&apos;osiL-lhcj9g/&apos;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><em>以上-p后的内容为随机密码，可在/opt/mysql-5.7.12/data/err.log中查看</em></p>
+<ul>
+<li>将myql命令加入环境变量，方便mysql命令使用<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cp /etc/profile /etc/profile-bak</span><br><span class="line">vim /etc/profile</span><br><span class="line">MYSQL_HOME=/opt/mysql-5.7.12</span><br><span class="line">PATH=$MYSQL_HOME/bin:$PATH</span><br><span class="line">export PATH</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><strong>附</strong></p>
+<ul>
+<li>mysql启动，停止命令<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/opt/mysql-5.7.12/support-files/mysql.server start|stop</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
 
       
     </div>
@@ -296,13 +377,13 @@ Quick">
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/05/27/hello-world/">Hello World</a></p>
+        <p><span>本文标题:</span><a href="/2016/05/28/mysql-5.5.12-install/">mysql-5.7.12源码编译安装</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">lotey</a></p>
-        <p><span>发布时间:</span>2016-05-27, 23:27:53</p>
-        <p><span>最后更新:</span>2016-05-27, 23:27:53</p>
+        <p><span>发布时间:</span>2016-05-28, 12:54:45</p>
+        <p><span>最后更新:</span>2016-05-28, 12:54:45</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/05/27/hello-world/" title="Hello World">http://yoursite.com/2016/05/27/hello-world/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/05/27/hello-world/　　作者: lotey" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2016/05/28/mysql-5.5.12-install/" title="mysql-5.7.12源码编译安装">http://yoursite.com/2016/05/28/mysql-5.5.12-install/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/05/28/mysql-5.5.12-install/　　作者: lotey" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -314,12 +395,12 @@ Quick">
 
     <nav id="article-nav">
         
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2016/05/28/mysql-5.5.12-install/">
-                    mysql-5.7.12源码编译安装
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2016/05/27/hello-world/">
+                    Hello World
                 </a>
             </div>
-        
         
     </nav>
 
@@ -328,7 +409,7 @@ Quick">
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+    
 </div>
 <style>
     .left-col .switch-btn {
@@ -385,7 +466,7 @@ Quick">
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"Hello World　| lotey　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"mysql-5.7.12源码编译安装　| lotey　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -405,15 +486,15 @@ Quick">
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/05/28/mysql-5.5.12-install/" title="上一篇: mysql-5.7.12源码编译安装">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a href="/2016/05/27/hello-world/" title="下一篇: Hello World">
+                <i class="fa fa-angle-right"></i>
+            </a>
         
     </div>
 
